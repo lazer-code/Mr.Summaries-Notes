@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. The Compose theme (MrSummariesNotesTheme) is the
+         primary theming mechanism; this XML theme exists only to satisfy the
+         Activity's android:theme attribute in the manifest and to set the
+         window background before Compose renders its first frame. -->
+    <style name="Theme.MrSummariesNotes" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Use a plain white background so there is no flash between launch and
+             the first Compose frame on the ink canvas. -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

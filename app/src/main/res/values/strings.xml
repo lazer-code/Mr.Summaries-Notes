@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mr.Summaries Notes</string>
+    <!-- Toolbar content descriptions -->
+    <string name="cd_pen_tool">Pen tool</string>
+    <string name="cd_eraser_tool">Eraser tool</string>
+    <string name="cd_undo">Undo</string>
+</resources>
