@@ -1,0 +1,23 @@
+# Android build artifacts
+.gradle/
+build/
+app/build/
+local.properties
+
+# Android Studio / IntelliJ project files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Gradle wrapper binary (downloaded automatically by Android Studio / CI)
+gradle/wrapper/gradle-wrapper.jar
+
+# Generated resource / source files
+app/src/main/gen/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        No special permissions are required for stylus input — Android routes
+        MotionEvents with TOOL_TYPE_STYLUS directly to the focused View/Window.
+        The VIBRATE permission is listed here as a placeholder in case haptic
+        feedback is added when a scratch-out deletion is confirmed (future work).
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MrSummariesNotes">
+
+        <!--
+            MainActivity is the single entry point.  It hosts the full-screen
+            Compose surface that renders InkCanvasScreen.
+
+            android:configChanges — prevents Activity recreation on keyboard
+            show/hide and orientation change so the in-progress stroke state
+            held by InkViewModel survives rotation without extra save/restore logic.
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

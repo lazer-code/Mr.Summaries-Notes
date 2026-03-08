@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher icon foreground — a simple stylus/pen path in deep navy -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Pen body -->
+    <path
+        android:fillColor="#FF1A1A2E"
+        android:pathData="M68,20 L88,40 L44,84 L24,84 L24,64 Z" />
+    <!-- Pen tip highlight -->
+    <path
+        android:fillColor="#FF3A3A5E"
+        android:pathData="M68,20 L88,40 L80,48 L60,28 Z" />
+</vector>
